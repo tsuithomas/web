@@ -1,0 +1,136 @@
+*{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+}
+.fullPage{
+  height: 2000px;
+}
+
+.navBar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 5px 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: rgb(45, 43, 43);
+  height: 50px;
+}
+.navName{
+  font-size: x-large;
+  flex: 1;
+  margin-left: 10px;
+  font-weight: bold;
+  display: flex ;
+  align-items: flex-start;
+  list-style: none;
+}
+.navName li{
+  margin-left: 20px;
+}
+.navName .navCap{
+  margin-top: -1px;
+  scale: 1.5;
+}
+.navIcon{
+  text-decoration: none;
+}
+.navIcon:visited{
+  color: white;
+}
+.navIcon .navIconActive{
+  color: white;
+}
+
+.navList{
+  flex: 1 ;
+  text-align: right;
+}
+.navList ul li{
+  font-size: large;
+  display: inline-block;
+  margin-right: 20px;
+}
+.navLink{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navLink:visited{
+  color: white;
+}
+.navLink:hover{
+  opacity: 0.7;
+}
+.navLink .navLinkActive{
+  color: white;
+}
+.navList li svg{
+  scale: 1.5;
+  margin-left: 5px;
+  margin-top: 1px;
+}
+@media only screen and (min-width: 851px) {
+  .navList .menuBar {
+    display: none;
+  }
+  .menu{
+    display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .navList .normListItem {
+    display: none;
+  }
+  .navList .menuBar {
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  .navList .menuBar:hover{
+    scale: 1.5;
+  }
+  .navName{
+    flex: 3;
+  }
+}
+
+.menu{
+  z-index: 1;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  padding: 15px 0;
+  background-color: rgb(81, 78, 78, 0.8);
+}
+.menu ul li{
+  text-align: center;
+  padding: 5px 0;
+  font-size: large;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.topPicture {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.imageText {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 300px;
+  color: white;
+  font-size: xx-large;
+}
