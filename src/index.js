@@ -32,12 +32,21 @@ class Home extends React.Component {
   }
 }
 
+function Card({ heading, body }) {
+  return (
+    <div className="card">
+      <h2 className="card-heading">{heading}</h2>
+      <div className="card-body">{body}</div>
+    </div>
+  );
+}
+
 class School extends React.Component {
   render() {
     return(
-      <>
-        <h2>School</h2>
-      </>
+      <div className="school">
+        <Card heading="Example Card" body="This is the body of the card." />
+      </div>
     );
   }
 }
